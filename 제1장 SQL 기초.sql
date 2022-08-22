@@ -9,9 +9,9 @@ drop database `UserDB`;
 #실습1-2
 create table `User1` (
 	`uid`	varchar(10),
-    `name`	varchar(10),
-    `hp`	char(13),
-    `age`	int
+	`name`	varchar(10),
+	`hp`	char(13),
+	`age`	int
 );
 
 drop table `User1`;
@@ -23,8 +23,8 @@ insert into `User1` values ('A103', '장보고', '010-1234-3333', 32);
 insert into `User1` (`uid`, `name`, `age`) values ('A104', '강감찬', 45);
 insert into `User1` set
 					`uid`='A105',
-                    `name`='이순신',
-                    `hp`='010-1234-5555';
+					`name`='이순신',
+					`hp`='010-1234-5555';
 
 #실습1-4
 select * from `User1`;
@@ -38,10 +38,10 @@ select `uid`, `name`, `age` from `User1`;
 update `User1` set `hp`='010-1234-4444' where `uid`='A104';
 update `User1` set `age`=51 where `uid`='A105';
 update `User1` set
-					`hp`='010-1234-1001',
-					`age`=27
+				`hp`='010-1234-1001',
+				`age`=27
 			   where
-					`uid`='A101';
+				`uid`='A101';
 
 #실습1-6
 delete from `User1` where `uid`='A101';
@@ -49,5 +49,10 @@ delete from `User1` where `uid`='A102' and `age`=23;
 delete from `User1` where `age`>=30;
 
 #실습1-7
+
+
 #실습1-8
+
+
 #실습1-9
+
