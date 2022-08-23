@@ -63,9 +63,9 @@ create table `User4` (
 insert into `User4` (`name`, `gender`, `age`, `addr`) values ('김유신', 1, 25, '김해시');
 insert into `User4` set
 					`name`='심사임당',
-                    `gender`=2,
-                    `age`=27,
-                    `addr`='강릉시';
+					`gender`=2,
+					`age`=27,
+					`addr`='강릉시';
 
 delete from `User4` where `name`='김유신';
 
